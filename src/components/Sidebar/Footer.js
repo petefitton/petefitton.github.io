@@ -1,5 +1,5 @@
 import React from 'react';
-import downloadFile from './PeteFittonResumeApr2020.pdf'
+import downloadFile from '../../data/PeteFittonResumeApr2020.pdf'
 
 export default function Footer({ socialLinks = [] }) {
   return (
