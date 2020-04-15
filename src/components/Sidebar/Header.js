@@ -6,7 +6,7 @@ export default function Header({ title, heading, avatar }) {
     <div id="logo">
       <Link to="/">
         <span className="image avatar48">
-          <img height="128px" src={avatar} alt="" />
+          <img height="128px" src={avatar} alt="Picture of Pete" style={{"border-radius": "50%"}} />
         </span>
 
         <h1 id="title">{title}</h1>

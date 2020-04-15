@@ -5,12 +5,19 @@ export default function Footer({ socialLinks = [] }) {
     <div className="bottom">
       <ul className="icons">
         {socialLinks.map(social => {
-          const { icon, name, url } = social;
+          const { icon, name, url, download } = social;
           return (
             <li key={url}>
-              <a href={url} className={`icon ${icon}`}>
+              {if (download == "No") {
+                <a></a>
+              <a href={url} target="_blank" className={`icon ${icon}`}>
                 <span className="label">{name}</span>
               </a>
+              } else {
+              <a href={url} className={`icon ${icon}`} download>
+                <span className="label">{name}</span>
+              </a>
+              }}
             </li>
           );
         })}

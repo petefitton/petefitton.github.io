@@ -1,36 +1,40 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Prologue', // <title>
+  siteTitle: 'Pete Fitton\'s Portfolio', // <title>
   manifestName: 'Prologue',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: 'src/assets/img/screenshots/portfolioFavicon.png',
   pathPrefix: `/gatsby-starter-prologue/`, // This path is subpath of your hosting https://domain/portfolio
   authorName: 'Pete',
-  heading: 'Web Developer',
+  heading: 'Full-Stack Web Developer',
   // social
   socialLinks: [
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/petefitton',
+      download: "No"
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      icon: 'fa-linkedin',
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/petefitton/',
+      download: "No"
     },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
+      url: 'mailto:petefitton@gmail.com',
+      download: "No"
+    },
+    {
+      icon: 'fa-file',
+      name: 'Resume',
+      url: '',
+      download: "Yes"
     },
   ],
 };
