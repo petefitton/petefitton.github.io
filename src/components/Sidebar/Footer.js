@@ -11,7 +11,7 @@ export default function Footer({ socialLinks = [] }) {
           if (download === "No") {
             conditional = <a href={url} className={`icon ${icon}`} target="_blank"><span className="label">{name}</span></a>
           } else {
-            conditional = <a href={downloadFile} className={`icon ${icon}`} download><span className="label">{name}</span></a>
+            conditional = <a href="pfPortfolio/PeteFittonResumeApr2020.pdf" className={`icon ${icon}`} download><span className="label">{name}</span></a>
           }
           return (
             <li key={url}>
