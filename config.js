@@ -33,7 +33,7 @@ module.exports = {
     {
       icon: 'fa-file',
       name: 'Resume',
-      url: '/PeteFittonResumeApr2020.pdf',
+      url: '/pfPortfolio/PeteFittonResumeApr2020.pdf',
       download: "Yes"
     },
   ],
