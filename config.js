@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/screenshots/portfolioFavicon.png',
   pathPrefix: `/gatsby-starter-prologue/`, // This path is subpath of your hosting https://domain/portfolio
   authorName: 'Pete',
-  heading: 'Full-Stack Web Developer',
+  heading: 'Full-Stack Web Developer\npetefitton@gmail.com',
   // social
   socialLinks: [
     {
@@ -33,7 +33,7 @@ module.exports = {
     {
       icon: 'fa-file',
       name: 'Resume',
-      url: '',
+      url: '/PeteFittonResumeApr2020.pdf',
       download: "Yes"
     },
   ],

@@ -266,6 +266,12 @@ const IndexPage = () => (
             program where I learned how to use a plethora of web development tools and 
             technologies. I am excited to continue growing my coding skills and happy to be 
             in a field where constant learning isn't just possible, but expected!
+            <br />
+            <br />
+            Send me an email: petefitton@gmail.com
+            <br />
+            <br />
+            You can download my resume in the side bar menu to the left.
           </p>
         </div>
       </section>
