@@ -1,4 +1,5 @@
 import React from 'react';
+import downloadFile from '../../assets/downloads/PeteFittonResumeApr2020.pdf'
 
 export default function Footer({ socialLinks = [] }) {
   return (
@@ -10,7 +11,7 @@ export default function Footer({ socialLinks = [] }) {
           if (download === "No") {
             conditional = <a href={url} className={`icon ${icon}`} target="_blank"><span className="label">{name}</span></a>
           } else {
-            conditional = <a href={url} className={`icon ${icon}`} download><span className="label">{name}</span></a>
+            conditional = <a href={downloadFile} className={`icon ${icon}`} download><span className="label">{name}</span></a>
           }
           return (
             <li key={url}>
