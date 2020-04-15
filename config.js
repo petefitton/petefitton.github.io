@@ -35,6 +35,6 @@ module.exports = {
       name: 'Resume',
       url: '/pfPortfolio/PeteFittonResumeApr2020.pdf',
       download: "Yes"
-    },
+    }, 
   ],
 };
