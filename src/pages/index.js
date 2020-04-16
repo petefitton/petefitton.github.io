@@ -58,11 +58,14 @@ const IndexPage = () => (
           </header>
 
           <p>
-            Below is a curated selection of my projects with descriptions,
-            links to the GitHub repositories & deployed websites, and a list of technologies used.
+            <h3>Skills</h3>
+            React.JS, JavaScript, Python, TypeScript, Node.JS, Flask, D3.JS, PostgreSQL (SQL), 
+            MongoDB (noSQL), Express.JS, Sequelize.JS, Mongoose, APIs, RESTful Routing, 
+            Sass, Materialize/Material UI, Bootstrap, SQLAlchemy, Pandas, Jupyter, Frozen-Flask, 
+            HTML, and CSS
             <br />
             <br />
-            Quickly scroll to a Project:
+            <h3>Quickly scroll to a Project:</h3>
             <br />
             <br />
             <Scroll type="id" element={'chartizard'}>
