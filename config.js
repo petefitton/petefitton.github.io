@@ -9,7 +9,8 @@ module.exports = {
   manifestIcon: 'src/assets/img/screenshots/portfolioFavicon.png',
   pathPrefix: `/gatsby-starter-prologue/`, // This path is subpath of your hosting https://domain/portfolio
   authorName: 'Pete',
-  heading: 'Full-Stack Web Developer\npetefitton@gmail.com',
+  heading: 'Full-Stack Web Developer',
+  headingTwo: 'petefitton@gmail.com',
   // social
   socialLinks: [
     {

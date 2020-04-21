@@ -4,18 +4,22 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
 
-import pic2 from '../assets/img/screenshots/splash.png';
-import pic22 from '../assets/img/screenshots/chart.png';
-import pic3 from '../assets/img/screenshots/Elmprints.jpeg';
-import pic4 from '../assets/img/screenshots/UNITY.png';
-import pic42 from '../assets/img/screenshots/UNITY3.png';
-import pic43 from '../assets/img/screenshots/UNITY4.png';
-import pic44 from '../assets/img/screenshots/UNITY2.png';
-import pic6 from '../assets/img/screenshots/GuitStrum.png';
-import pic62 from '../assets/img/screenshots/GuitStrum2.png';
-import pic63 from '../assets/img/screenshots/GuitStrum3.png';
+// import pic2 from '../assets/img/screenshots/splash.png';
+// import pic22 from '../assets/img/screenshots/chart.png';
+// import pic3 from '../assets/img/screenshots/Elmprints.jpeg';
+// import pic4 from '../assets/img/screenshots/UNITY.png';
+// import pic42 from '../assets/img/screenshots/UNITY3.png';
+// import pic43 from '../assets/img/screenshots/UNITY4.png';
+// import pic44 from '../assets/img/screenshots/UNITY2.png';
+// import pic6 from '../assets/img/screenshots/GuitStrum.png';
+// import pic62 from '../assets/img/screenshots/GuitStrum2.png';
+// import pic63 from '../assets/img/screenshots/GuitStrum3.png';
 import pic8 from '../assets/img/screenshots/stage2.jpg';
 import Scroll from '../components/Scroll';
+import chartizardVideo from '../assets/videos/chartizard.mp4';
+import elmprintsVideo from '../assets/videos/elmprints.mp4';
+import unityVideo from '../assets/videos/unity.mp4';
+import guitstrumVideo from '../assets/videos/guitstrum.mp4';
 
 const sections = [
   { id: 'top', name: 'Intro', icon: 'fa-home' },
@@ -100,10 +104,14 @@ const IndexPage = () => (
                     <div className="col-12 col-12-mobile">
                       <article className="item" id="chartizard">
                         <h2>CHARTizard</h2>
-                        <a href="/#" className="image fit">
-                          <img src={pic2} alt="" />
-                          <img src={pic22} alt="" />
-                        </a>
+                        {/* <a href="/#" className="image fit"> */}
+                          {/* <img src={pic2} alt="" /> */}
+                          {/* <img src={pic22} alt="" /> */}
+                          <video width="100%" height="auto" controls loop>
+                            <source src={chartizardVideo} type="video/mp4"></source>
+                          Your browser does not support the video tag.
+                          </video>
+                        {/* </a> */}
                         <header>
                           <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><strong>CHARTizard</strong> is a data visualization website for viewing Pokemon statistics.
                           It was created using D3.JS within a simple Flask server made static with Frozen-Flask.
@@ -118,18 +126,22 @@ const IndexPage = () => (
                           change the variables mapped on the x and y axes.
                           <br />
                           <br />
-                          <strong>Deployed website link: <a href="http://chartizard.netlify.com/">http://chartizard.netlify.com/</a></strong>
+                          <strong>Deployed website link: <a href="http://chartizard.netlify.com/" target="_blank">http://chartizard.netlify.com/</a></strong>
                           <br />
                           <br />
-                          <strong>GitHub repo: <a href="https://github.com/petefitton/CHARTizard">https://github.com/petefitton/CHARTizard</a></strong>
+                          <strong>GitHub repo: <a href="https://github.com/petefitton/CHARTizard" target="_blank">https://github.com/petefitton/CHARTizard</a></strong>
                           </p>
                         </header>
                       </article>
                       <article className="item" id="elmprints">
                         <h2>ELM PRINTS</h2>
-                        <a href="/#" className="image fit">
+                        {/* <a href="/#" className="image fit">
                           <img src={pic3} alt="" />
-                        </a>
+                        </a> */}
+                        <video width="100%" height="auto" controls loop>
+                          <source src={elmprintsVideo} type="video/mp4"></source>
+                        Your browser does not support the video tag.
+                        </video>
                         <header>
                           <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><strong>ELM PRINTS</strong> is 
                           an eCommerce site for selling movie and art posters. This website was created by a
@@ -152,13 +164,13 @@ const IndexPage = () => (
                           our time constraints and prior experiences with the technology we used.
                           <br />
                           <br />
-                          <strong>Deployed website link: <a href="http://elmprints.herokuapp.com/">http://elmprints.herokuapp.com/</a></strong>
+                          <strong>Deployed website link: <a href="http://elmprints.herokuapp.com/" target="_blank">http://elmprints.herokuapp.com/</a></strong>
                           <br />
                           <br />
-                          <strong>My GitHub repo for this project: <a href="https://github.com/petefitton/elmprints">https://github.com/petefitton/elmprints</a></strong>
+                          <strong>My GitHub repo for this project: <a href="https://github.com/petefitton/elmprints" target="_blank">https://github.com/petefitton/elmprints</a></strong>
                           <br />
                           <br />
-                          <strong>The master repo: <a href="https://github.com/snipspin/elmprints">https://github.com/snipspin/elmprints</a></strong>
+                          <strong>The master repo: <a href="https://github.com/snipspin/elmprints" target="_blank">https://github.com/snipspin/elmprints</a></strong>
                           </p>
                         </header>
                       </article>
@@ -166,12 +178,16 @@ const IndexPage = () => (
                     <div className="col-12 col-12-mobile">
                       <article className="item" id="unity">
                         <h2>UNITY</h2>
-                        <a href="/#" className="image fit">
+                        {/* <a href="/#" className="image fit">
                           <img src={pic4} alt="" />
                           <img src={pic42} alt="" />
                           <img src={pic43} alt="" />
                           <img src={pic44} alt="" />
-                        </a>
+                        </a> */}
+                        <video width="100%" height="auto" controls loop>
+                          <source src={unityVideo} type="video/mp4"></source>
+                        Your browser does not support the video tag.
+                        </video>
                         <header>
                           <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><strong>UNITY</strong> is 
                           a browser-based game written purely in HTML, CSS, and JavaScript. This was my first
@@ -196,10 +212,10 @@ const IndexPage = () => (
                           those fundamentals.
                           <br />
                           <br />
-                          <strong>Deployed website link: <a href="https://petefitton.github.io/UNITY/">https://petefitton.github.io/UNITY/</a></strong>
+                          <strong>Deployed website link: <a href="https://petefitton.github.io/UNITY/" target="_blank">https://petefitton.github.io/UNITY/</a></strong>
                           <br />
                           <br />
-                          <strong>GitHub repo: <a href="https://github.com/petefitton/UNITY">https://github.com/petefitton/UNITY</a></strong>
+                          <strong>GitHub repo: <a href="https://github.com/petefitton/UNITY" target="_blank">https://github.com/petefitton/UNITY</a></strong>
                           </p>
                         </header>
                       </article>
@@ -207,11 +223,15 @@ const IndexPage = () => (
                     <div className="col-12 col-12-mobile">
                       <article className="item" id="guitstrum">
                         <h2>GuitStrum</h2>
-                        <a href="/#" className="image fit">
+                        {/* <a href="/#" className="image fit">
                           <img src={pic6} alt="" />
                           <img src={pic62} alt="" />
                           <img src={pic63} alt="" />
-                        </a>
+                        </a> */}
+                        <video width="100%" height="auto" controls loop>
+                          <source src={guitstrumVideo} type="video/mp4"></source>
+                        Your browser does not support the video tag.
+                        </video>
                         <header>
                           <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><strong>GuitStrum</strong> is 
                           a website built for beginner/intermediate guitarists. It consists of two main parts: 
@@ -238,10 +258,10 @@ const IndexPage = () => (
                           I still had a great time and learned a lot though!
                           <br />
                           <br />
-                          <strong>Deployed website link: <a href="https://guitstrum.herokuapp.com/">https://guitstrum.herokuapp.com/</a></strong>
+                          <strong>Deployed website link: <a href="https://guitstrum.herokuapp.com/" target="_blank">https://guitstrum.herokuapp.com/</a></strong>
                           <br />
                           <br />
-                          <strong>GitHub repo: <a href="https://github.com/petefitton/GuitStrum">https://github.com/petefitton/GuitStrum</a></strong>
+                          <strong>GitHub repo: <a href="https://github.com/petefitton/GuitStrum" target="_blank">https://github.com/petefitton/GuitStrum</a></strong>
                           </p>
                         </header>
                       </article>

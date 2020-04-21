@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-export default function Header({ title, heading, avatar }) {
+export default function Header({ title, heading, headingTwo, avatar }) {
   return (
     <div id="logo">
       <Link to="/">
@@ -11,6 +11,7 @@ export default function Header({ title, heading, avatar }) {
 
         <h1 id="title">{title}</h1>
         <p>{heading}</p>
+        <p>{headingTwo}</p>
       </Link>
     </div>
   );
