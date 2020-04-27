@@ -9,9 +9,9 @@ export default function Footer({ socialLinks = [] }) {
           const { icon, name, url, download } = social;
           var conditional
           if (download === "No") {
-            conditional = <a href={url} className={`icon ${icon}`} target="_blank"><span className="label">{name}</span></a>
+            conditional = <a href={url} className={`icon ${icon}`} rel={"noopener noreferrer"} target="_blank"><span className="label">{name}</span></a>
           } else {
-            conditional = <a href="pfPortfolio/PeteFittonResumeApr2020.pdf" className={`icon ${icon}`} download><span className="label">{name}</span></a>
+            conditional = <a href={downloadFile} className={`icon ${icon}`} rel={"noopener noreferrer"} target="_blank"><span className="label">{name}</span></a>
           }
           return (
             <li key={url}>

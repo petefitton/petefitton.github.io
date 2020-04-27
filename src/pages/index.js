@@ -20,6 +20,8 @@ import chartizardVideo from '../assets/videos/chartizard.mp4';
 import elmprintsVideo from '../assets/videos/elmprints.mp4';
 import unityVideo from '../assets/videos/unity.mp4';
 import guitstrumVideo from '../assets/videos/guitstrum.mp4';
+import downloadFile from '../data/PeteFittonResumeApr2020.pdf'
+
 
 const sections = [
   { id: 'top', name: 'Intro', icon: 'fa-home' },
@@ -36,7 +38,7 @@ const IndexPage = () => (
       <section id="top" className="one dark cover">
         <div className="container">
           <header>
-            <h2 className="alt txtshad">
+            <h2 className="alt txtshad" id="welcomeTxt">
               Welcome to my portfolio site
               <br />
               I'm <strong>Pete</strong>!
@@ -62,42 +64,42 @@ const IndexPage = () => (
           </header>
 
           <p>
-            <h3>Skills</h3>
-            React.JS, JavaScript, Python, TypeScript, Node.JS, Flask, D3.JS, PostgreSQL (SQL), 
-            MongoDB (noSQL), Express.JS, Sequelize.JS, Mongoose, APIs, RESTful Routing, 
-            Sass, Materialize/Material UI, Bootstrap, SQLAlchemy, Pandas, Jupyter, Frozen-Flask, 
-            HTML, and CSS
+            {/* <h3>Skills</h3> */}
+            <div className="skillsDiv">
+              <span>React.JS</span> <span>JavaScript</span> <span>Python</span> <span>TypeScript</span>
+              <span>Node.JS</span> <span>Flask</span> <span>D3.JS</span> <span>PostgreSQL</span> 
+              <span>MongoDB</span> <span>Express.JS</span> <span>Sequelize.JS</span> <span>Mongoose</span>
+              <span>APIs</span> <span>Sass</span> <span>REST</span> 
+              <span>Materialize</span> <span>Material UI</span> <span>Bootstrap</span> <span>SQLAlchemy</span>
+              <span>Pandas</span> <span>Jupyter</span> <span>Frozen-Flask</span>
+              <span>HTML</span> <span>CSS</span>
+            </div>
             <br />
             <br />
             <h3>Quickly scroll to a Project:</h3>
             <br />
-            <br />
-            <Scroll type="id" element={'chartizard'}>
-              <a href="#chartizard" className="button">
-                CHARTizard
-              </a>
-            </Scroll>
-            <br />
-            <br />
-            <Scroll type="id" element={'elmprints'}>
-              <a href="#elmprints" className="button">
-                ELM PRINTS
-              </a>
-            </Scroll>
-            <br />
-            <br />
-            <Scroll type="id" element={'unity'}>
-              <a href="#unity" className="button">
-                UNITY
-              </a>
-            </Scroll>
-            <br />
-            <br />
-            <Scroll type="id" element={'guitstrum'}>
-              <a href="#guitstrum" className="button">
-                GuitStrum
-              </a>
-            </Scroll>
+            <div className="projScrollBtnDiv">
+              <Scroll type="id" element={'chartizard'}>
+                <a href="#chartizard" className="button" id="standard">
+                  CHARTizard
+                </a>
+              </Scroll>
+              <Scroll type="id" element={'elmprints'}>
+                <a href="#elmprints" className="button" id="standard">
+                  ELM PRINTS
+                </a>
+              </Scroll>
+              <Scroll type="id" element={'unity'}>
+                <a href="#unity" className="button" id="standard">
+                  UNITY
+                </a>
+              </Scroll>
+              <Scroll type="id" element={'guitstrum'}>
+                <a href="#guitstrum" className="button" id="standard">
+                  GuitStrum
+                </a>
+              </Scroll>
+            </div>
           </p>
 
                   <div className="row">
@@ -113,24 +115,22 @@ const IndexPage = () => (
                           </video>
                         {/* </a> */}
                         <header>
-                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><strong>CHARTizard</strong> is a data visualization website for viewing Pokemon statistics.
-                          It was created using D3.JS within a simple Flask server made static with Frozen-Flask.
-                          I also initially explored the data within a Jupyter notebook with Pandas. Styling for
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><span className="boldMont">CHARTizard</span> is a data visualization website for viewing Pokemon statistics.
+                          It was created using <span className="boldMont">D3.JS</span> within a simple <span className="boldMont">Flask</span> server made static with <span className="boldMont">Frozen-Flask</span>.
+                          I also initially explored the data within a <span className="boldMont">Jupyter</span> notebook with <span className="boldMont">Pandas</span>. Styling for
                           the site was entirely HTML, CSS, and where D3 was used: JavaScript. I also utilized
                           Photosensitive Epilepsy Analysis Tool (PEAT) to test for the site's safety and appreciated
-                          learning more about producing more accessible content in the process.
-                          <br />
-                          <br />
-                          I loved learning D3.JS. It was relatively difficult to learn, but produced a
+                          learning more about producing accessible content in the process.
+                          </p>
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}>I loved learning D3.JS. It was relatively difficult to learn, but produced a
                           high-quality chart replete with animations and integrated filtering with the capability to
                           change the variables mapped on the x and y axes.
-                          <br />
-                          <br />
-                          <strong>Deployed website link: <a href="http://chartizard.netlify.com/" target="_blank">http://chartizard.netlify.com/</a></strong>
-                          <br />
-                          <br />
-                          <strong>GitHub repo: <a href="https://github.com/petefitton/CHARTizard" target="_blank">https://github.com/petefitton/CHARTizard</a></strong>
                           </p>
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>Deployed website: <a className="blueBoldMont" href="http://chartizard.netlify.com" rel={"noopener noreferrer"} target="_blank">http://chartizard.netlify.com/</a></span>
+                          <br />
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>GitHub repo: <a className="blueBoldMont" href="https://github.com/petefitton/CHARTizard" rel={"noopener noreferrer"} target="_blank">https://github.com/petefitton/CHARTizard</a></span>
                         </header>
                       </article>
                       <article className="item" id="elmprints">
@@ -143,7 +143,7 @@ const IndexPage = () => (
                         Your browser does not support the video tag.
                         </video>
                         <header>
-                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><strong>ELM PRINTS</strong> is 
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><span className="boldMont">ELM PRINTS</span> is 
                           an eCommerce site for selling movie and art posters. This website was created by a
                           team of three developers. We took a very collaborative approach and performed most work
                           while together on a zoom call. We frequently did mob and pair programming on issues that
@@ -152,26 +152,23 @@ const IndexPage = () => (
                           I also was responsible for doing the initial Stripe setup and helped with paired programming
                           on most other aspects of the site. Additionally, I organized the Sprint Plan and held informal
                           check-ins daily to assess where we were in the project according to our goals.
-                          <br />
-                          <br />
-                          ELM PRINTS was made using React with TypeScript with Material-UI & Sass for the front-end with
-                          Node, Express and MongoDB with Mongoose for the back-end. We utilized Stripe to handle
-                          purchases and JSON Web Tokens for authentication/authorization.
-                          <br />
-                          <br />
-                          This was an incredibly rewarding project. I had an incredible team that took on the challenges
+                          </p>
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}>ELM PRINTS was made using <span className="boldMont">React</span> with <span className="boldMont">TypeScript</span> with <span className="boldMont">Material-UI</span> & <span className="boldMont">Sass</span> for the front-end with
+                          <span className="boldMont">Node</span>, <span className="boldMont">Express</span> and <span className="boldMont">MongoDB</span> with <span className="boldMont">Mongoose</span> for the back-end. We utilized <span className="boldMont">Stripe</span> to handle
+                          purchases and <span className="boldMont">JSON Web Tokens</span> for authentication/authorization.
+                          </p>
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}>This was an incredibly rewarding project. I had an incredible team that took on the challenges
                           of this project with excitement and vigor. We had great teamwork and made a great product given
                           our time constraints and prior experiences with the technology we used.
-                          <br />
-                          <br />
-                          <strong>Deployed website link: <a href="http://elmprints.herokuapp.com/" target="_blank">http://elmprints.herokuapp.com/</a></strong>
-                          <br />
-                          <br />
-                          <strong>My GitHub repo for this project: <a href="https://github.com/petefitton/elmprints" target="_blank">https://github.com/petefitton/elmprints</a></strong>
-                          <br />
-                          <br />
-                          <strong>The master repo: <a href="https://github.com/snipspin/elmprints" target="_blank">https://github.com/snipspin/elmprints</a></strong>
                           </p>
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>Deployed website: <a className="blueBoldMont" href="http://elmprints.herokuapp.com/" rel={"noopener noreferrer"} target="_blank">http://elmprints.herokuapp.com/</a></span>
+                          <br />
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>My GitHub repo for this project: <a className="blueBoldMont" href="https://github.com/petefitton/elmprints" rel={"noopener noreferrer"} target="_blank">https://github.com/petefitton/elmprints</a></span>
+                          <br />
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>The master repo: <a className="blueBoldMont" href="https://github.com/snipspin/elmprints" rel={"noopener noreferrer"} target="_blank">https://github.com/snipspin/elmprints</a></span>
                         </header>
                       </article>
                     </div>
@@ -189,14 +186,13 @@ const IndexPage = () => (
                         Your browser does not support the video tag.
                         </video>
                         <header>
-                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><strong>UNITY</strong> is 
-                          a browser-based game written purely in HTML, CSS, and JavaScript. This was my first
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><span className="boldMont">UNITY</span> is 
+                          a browser-based game written purely in <span className="boldMont">HTML</span>, <span className="boldMont">CSS</span>, and <span className="boldMont">JavaScript</span>. This was my first
                           large-scale browser project and was incredibly exciting for me to develop. From the
                           very beginning, the conception of the game grabbed me and drove me forward to write
                           thousands of lines of code within the week timeframe my class had for this project.
-                          <br />
-                          <br />
-                          UNITY tells the story of a zero-dimensional being, Sisyphus, who is pulled from his
+                          </p>
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}>UNITY tells the story of a zero-dimensional being, Sisyphus, who is pulled from his
                           zero-dimensional space by a mysterious being. Unable to cope with his expanded reality,
                           he seeks to reduce everything into zero-dimensional space. The battle mechanics are
                           similar to Pokemon which inspired the battle screen's layout as well. The game was
@@ -204,19 +200,17 @@ const IndexPage = () => (
                           options & instructions menus, opening and closing stories, a level-up screen, a credit screen, and two 
                           enemy battles. After winning the game, you unlock Infinite Mode as well which allows
                           a player to battle enemies at random indefinitely. And like any good video game, there's sound!
-                          <br />
-                          <br />
-                          This project was an absolute blast for me. I loved working on the battle animations 
+                          </p>
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}>This project was an absolute blast for me. I loved working on the battle animations 
                           and feel like I created something I am really proud of. Because I made this project
                           with vanilla JavaScript and HTML/CSS, I feel that this project highly strengthened
                           those fundamentals.
-                          <br />
-                          <br />
-                          <strong>Deployed website link: <a href="https://petefitton.github.io/UNITY/" target="_blank">https://petefitton.github.io/UNITY/</a></strong>
-                          <br />
-                          <br />
-                          <strong>GitHub repo: <a href="https://github.com/petefitton/UNITY" target="_blank">https://github.com/petefitton/UNITY</a></strong>
                           </p>
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>Deployed website: <a className="blueBoldMont" href="https://petefitton.github.io/UNITY/" rel={"noopener noreferrer"} target="_blank">https://petefitton.github.io/UNITY/</a></span>
+                          <br />
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>GitHub repo: <a className="blueBoldMont" href="https://github.com/petefitton/UNITY" rel={"noopener noreferrer"} target="_blank">https://github.com/petefitton/UNITY</a></span>
                         </header>
                       </article>
                     </div>
@@ -233,21 +227,19 @@ const IndexPage = () => (
                         Your browser does not support the video tag.
                         </video>
                         <header>
-                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><strong>GuitStrum</strong> is 
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><span className="boldMont">GuitStrum</span> is 
                           a website built for beginner/intermediate guitarists. It consists of two main parts: 
                           a section of the website for exploring/learning Chords and another section for writing
                           and viewing other user's songs (chord progressions).
-                          <br />
-                          <br />
-                          The site was made using Node, Express, PostGreSQL, Axios, EJS, RegEx, Materialize with jQuery & CSS, and HTML.
-                          I worked with a UX Designer in the early stages to review my wireframes and improve
+                          </p>
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}>The site was made using <span className="boldMont">Node</span>, <span className="boldMont">Express</span>, <span className="boldMont">PostGreSQL</span>, <span className="boldMont">Axios</span>, <span className="boldMont">EJS</span>, <span className="boldMont">RegEx</span>, <span className="boldMont">Materialize</span> with <span className="boldMont">jQuery</span> & <span className="boldMont">CSS</span>, and <span className="boldMont">HTML</span>. 
+                          I worked with a <span className="boldMont">UX Designer</span> in the early stages to review my wireframes and improve
                           the user experience of the site. My early conversations with the UX Designer were 
                           very helpful and really got me thinking about the user experience of the site in a critical
                           way. These conversations still influence my approach to website design and improving the
                           usability of my products.
-                          <br />
-                          <br />
-                          This site was a real challenge at a couple points: searching for and rendering chords
+                          </p>
+                          <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}>This site was a real challenge at a couple points: searching for and rendering chords
                           required doing a mixture of Axios calls with pulling the images directly from a URL
                           that created the chord images. Handling the various ways in which the chords were named/
                           the syntax used in their names was also a bit challenging at times. The song rendering
@@ -256,13 +248,12 @@ const IndexPage = () => (
                           more complexity would have taken more time. I definitely realized coming out of the project
                           that this idea is probably better suited to a stand-alone application more than a web app.
                           I still had a great time and learned a lot though!
-                          <br />
-                          <br />
-                          <strong>Deployed website link: <a href="https://guitstrum.herokuapp.com/" target="_blank">https://guitstrum.herokuapp.com/</a></strong>
-                          <br />
-                          <br />
-                          <strong>GitHub repo: <a href="https://github.com/petefitton/GuitStrum" target="_blank">https://github.com/petefitton/GuitStrum</a></strong>
                           </p>
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>Deployed website: <a className="blueBoldMont" href="https://guitstrum.herokuapp.com/" rel={"noopener noreferrer"} target="_blank">https://guitstrum.herokuapp.com/</a></span>
+                          <br />
+                          <br />
+                          <span style={{"font-size": "1.25em"}}>GitHub repo: <a className="blueBoldMont" href="https://github.com/petefitton/GuitStrum" rel={"noopener noreferrer"} target="_blank">https://github.com/petefitton/GuitStrum</a></span>
                         </header>
                       </article>
                     </div>
@@ -280,22 +271,28 @@ const IndexPage = () => (
             <img src={pic8} alt="" />
           </a>
 
-          <p style={{"margin": "20px"}}>
-            I was born in the small town of Harrison, Arkansas. 
-            I have gone on to live in New Mexico, Vermont, Berlin (Germany), and Seattle. 
-            I love traveling and have been an active musician since I was four years old 
-            and performed in my first musical. I experimented with coding in the past, but 
-            more recently attended General Assembly's Software Development Immersive
-            program where I learned how to use a plethora of web development tools and 
-            technologies. I am excited to continue growing my coding skills and happy to be 
-            in a field where constant learning isn't just possible, but expected!
-            <br />
-            <br />
-            Send me an email: petefitton@gmail.com
-            <br />
-            <br />
-            You can download my resume in the side bar menu to the left.
-          </p>
+          <header>
+            <p style={{"margin": "20px"}}>
+              I was born in the small town of Harrison, Arkansas. 
+              I have gone on to live in New Mexico, Vermont, Berlin (Germany), and Seattle. 
+              I love traveling and have been an active musician since I was four years old 
+              and performed in my first musical. I experimented with coding in the past, but 
+              more recently attended General Assembly's Software Development Immersive
+              program where I learned how to use a plethora of web development tools and 
+              technologies. I am excited to continue growing my coding skills and happy to be 
+              in a field where constant learning isn't just possible, but expected!
+            </p>
+              <br />
+              <br />
+              <h5>
+                Send me an email: <span className="boldMont">petefitton@gmail.com</span>
+              </h5>
+              <br />
+              <br />
+              <h5>
+                <a className="blueBoldMont" href={downloadFile} rel={"noopener noreferrer"} target="_blank">Resume</a>
+              </h5>
+          </header>
         </div>
       </section>
 

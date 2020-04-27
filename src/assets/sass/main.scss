@@ -6,6 +6,7 @@
 @import 'libs/html-grid';
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,600");
 
 /*
 	Prologue by HTML5 UP
@@ -169,6 +170,8 @@
 
 		> p {
 			margin: 1em 0 0 0;
+			text-align: justify;
+			text-indent: 10%;
 		}
 	}
 
@@ -191,6 +194,7 @@
 		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
+		word-wrap: break-word;
 
 		&:hover {
 			color: #E27689;
@@ -518,6 +522,17 @@
 		}
 	}
 
+	#standard {
+		width: 72%;
+		margin: 20px;
+	}
+
+	.projScrollBtnDiv {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+
 /* Item */
 
 	.item {
@@ -593,7 +608,7 @@
 			text-align: center;
 
 			a {
-				color: #41484c;
+				color: #acb4b9;
 				@include vendor('transition', 'color 0.35s ease-in-out');
 
 				&:hover {
@@ -621,7 +636,7 @@
 			position: relative;
 			display: block;
 			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.75);
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
@@ -732,9 +747,9 @@
 				color: #ddd;
 				color: rgba(255, 255, 255, 0.75);
 
-				h2, h3, h4, h5, h6 {
-					color: inherit;
-				}
+				// h2, h3, h4, h5, h6 {
+				// 	color: inherit;
+				// }
 
 				strong {
 					color: #fff;
@@ -759,7 +774,7 @@
 
 			&.one {
 				background-color: #81918E;
-				background-image: url('../img/screenshots/header2.png');
+				background-image: url('../img/screenshots/header.png');
 			}
 
 			&.two {
@@ -775,6 +790,32 @@
 			}
 		}
 	}
+
+	// SKILLS
+	.skillsDiv {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top: 15px;
+		text-align: left;
+		padding-left: 15%;
+	}
+
+	.skillsDiv span {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.boldMont {
+		font-weight: bold;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.blueBoldMont {
+		font-weight: bold;
+		color: #6b919e;
+		font-family: 'Montserrat', sans-serif;
+		padding: 10px;
+	}
+
 
 /* Wide */
 
@@ -923,11 +964,11 @@
 				font-size: 16pt;
 			}
 
-			header {
-				br {
-					display: none;
-				}
-			}
+			// header {
+			// 	br {
+			// 		display: none;
+			// 	}
+			// }
 
 			.container {
 				padding: 0 2em 0 2em;
@@ -1146,8 +1187,33 @@
 				}
 			}
 
+			header {
+				p {
+					text-align: center;
+					text-indent: initial;
+				}
+			}
+
+			#standard {
+				width: 70%;
+				margin: 20px;
+			}
+		
+			.projScrollBtnDiv {
+				display: grid;
+				grid-template-columns: 1fr;
+				justify-items: center;
+			}
+		
+		// SKILLS
+			.skillsDiv {
+				padding-left: 10px;
+				grid-template-columns: 1.25fr 1fr;
+			}
+
 	}
 
-	.txtshad {
-		text-shadow: 1px 1px black;
+	#welcomeTxt {
+		color: white;
+		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), -1px -1px 4px rgba(0, 0, 0, 0.5), -1px 1px 4px rgba(0, 0, 0, 0.5), 1px -1px 4px rgba(0, 0, 0, 0.5), 0px -1px 4px rgba(0, 0, 0, 0.5), 0px 1px 4px rgba(0, 0, 0, 0.5);
 	}
