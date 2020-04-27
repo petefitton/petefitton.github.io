@@ -15,10 +15,7 @@ export default function Footer({ socialLinks = [] }) {
           }
           return (
             <li key={url}>
-              {/* <a href={url} className={`icon ${icon}`}> */}
               {conditional}
-                {/* <span className="label">{name}</span>
-              </a> */}
             </li>
           );
         })}

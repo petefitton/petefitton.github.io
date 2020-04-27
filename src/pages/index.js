@@ -4,22 +4,12 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
 
-// import pic2 from '../assets/img/screenshots/splash.png';
-// import pic22 from '../assets/img/screenshots/chart.png';
-// import pic3 from '../assets/img/screenshots/Elmprints.jpeg';
-// import pic4 from '../assets/img/screenshots/UNITY.png';
-// import pic42 from '../assets/img/screenshots/UNITY3.png';
-// import pic43 from '../assets/img/screenshots/UNITY4.png';
-// import pic44 from '../assets/img/screenshots/UNITY2.png';
-// import pic6 from '../assets/img/screenshots/GuitStrum.png';
-// import pic62 from '../assets/img/screenshots/GuitStrum2.png';
-// import pic63 from '../assets/img/screenshots/GuitStrum3.png';
 import pic8 from '../assets/img/screenshots/stage2.jpg';
 import Scroll from '../components/Scroll';
-import chartizardVideo from '../assets/videos/chartizard.mp4';
-import elmprintsVideo from '../assets/videos/elmprints.mp4';
-import unityVideo from '../assets/videos/unity.mp4';
-import guitstrumVideo from '../assets/videos/guitstrum.mp4';
+import chartizardVideo from '../assets/videos/chartizard.gif';
+import elmprintsVideo from '../assets/videos/elmprints.gif';
+import unityVideo from '../assets/videos/unity.gif';
+import guitstrumVideo from '../assets/videos/guitstrum.gif';
 import downloadFile from '../data/PeteFittonResumeApr2020.pdf'
 
 
@@ -27,7 +17,6 @@ const sections = [
   { id: 'top', name: 'Intro', icon: 'fa-home' },
   { id: 'portfolio', name: 'Portfolio', icon: 'fa-th' },
   { id: 'about', name: 'About Me', icon: 'fa-user' },
-  // { id: 'contact', name: 'Contact', icon: 'fa-envelope' },
 ];
 
 const IndexPage = () => (
@@ -64,7 +53,6 @@ const IndexPage = () => (
           </header>
 
           <p>
-            {/* <h3>Skills</h3> */}
             <div className="skillsDiv">
               <span>React.JS</span> <span>JavaScript</span> <span>Python</span> <span>TypeScript</span>
               <span>Node.JS</span> <span>Flask</span> <span>D3.JS</span> <span>PostgreSQL</span> 
@@ -106,14 +94,7 @@ const IndexPage = () => (
                     <div className="col-12 col-12-mobile">
                       <article className="item" id="chartizard">
                         <h2>CHARTizard</h2>
-                        {/* <a href="/#" className="image fit"> */}
-                          {/* <img src={pic2} alt="" /> */}
-                          {/* <img src={pic22} alt="" /> */}
-                          <video width="100%" height="auto" controls loop>
-                            <source src={chartizardVideo} type="video/mp4"></source>
-                          Your browser does not support the video tag.
-                          </video>
-                        {/* </a> */}
+                        <img src={chartizardVideo} alt="Gif of chartizard website" width="100%" height="auto"></img>
                         <header>
                           <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><span className="boldMont">CHARTizard</span> is a data visualization website for viewing Pokemon statistics.
                           It was created using <span className="boldMont">D3.JS</span> within a simple <span className="boldMont">Flask</span> server made static with <span className="boldMont">Frozen-Flask</span>.
@@ -135,13 +116,7 @@ const IndexPage = () => (
                       </article>
                       <article className="item" id="elmprints">
                         <h2>ELM PRINTS</h2>
-                        {/* <a href="/#" className="image fit">
-                          <img src={pic3} alt="" />
-                        </a> */}
-                        <video width="100%" height="auto" controls loop>
-                          <source src={elmprintsVideo} type="video/mp4"></source>
-                        Your browser does not support the video tag.
-                        </video>
+                          <img src={elmprintsVideo} alt="Gif of elmprints website" width="100%" height="auto"></img>
                         <header>
                           <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><span className="boldMont">ELM PRINTS</span> is 
                           an eCommerce site for selling movie and art posters. This website was created by a
@@ -175,16 +150,7 @@ const IndexPage = () => (
                     <div className="col-12 col-12-mobile">
                       <article className="item" id="unity">
                         <h2>UNITY</h2>
-                        {/* <a href="/#" className="image fit">
-                          <img src={pic4} alt="" />
-                          <img src={pic42} alt="" />
-                          <img src={pic43} alt="" />
-                          <img src={pic44} alt="" />
-                        </a> */}
-                        <video width="100%" height="auto" controls loop>
-                          <source src={unityVideo} type="video/mp4"></source>
-                        Your browser does not support the video tag.
-                        </video>
+                          <img src={unityVideo} alt="Gif of unity website" width="100%" height="auto"></img>
                         <header>
                           <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><span className="boldMont">UNITY</span> is 
                           a browser-based game written purely in <span className="boldMont">HTML</span>, <span className="boldMont">CSS</span>, and <span className="boldMont">JavaScript</span>. This was my first
@@ -217,15 +183,7 @@ const IndexPage = () => (
                     <div className="col-12 col-12-mobile">
                       <article className="item" id="guitstrum">
                         <h2>GuitStrum</h2>
-                        {/* <a href="/#" className="image fit">
-                          <img src={pic6} alt="" />
-                          <img src={pic62} alt="" />
-                          <img src={pic63} alt="" />
-                        </a> */}
-                        <video width="100%" height="auto" controls loop>
-                          <source src={guitstrumVideo} type="video/mp4"></source>
-                        Your browser does not support the video tag.
-                        </video>
+                          <img src={guitstrumVideo} alt="Gif of guitstrum website" width="100%" height="auto"></img>
                         <header>
                           <p style={{"font-size": "1.25em", "padding-left": "40px", "padding-right": "40px"}}><span className="boldMont">GuitStrum</span> is 
                           a website built for beginner/intermediate guitarists. It consists of two main parts: 
@@ -296,38 +254,6 @@ const IndexPage = () => (
         </div>
       </section>
 
-      {/* <section id="contact" className="four">
-        <div className="container">
-          <header>
-            <h2>Contact</h2>
-          </header>
-
-          <p>
-            The element of time, sem ante ullamcorper dolor nulla quam placerat
-            viverra environment is not with our customers. Free makeup and skirt
-            until the mouse. Japan this innovative and ultricies carton salad
-            clinical ridiculous now passes from enhanced. Mauris pot innovative
-            care for my pain.
-          </p>
-
-          <form method="post" action="#">
-            <div className="row">
-              <div className="col-6 col-12-mobile">
-                <input type="text" name="name" placeholder="Name" />
-              </div>
-              <div className="col-6 col-12-mobile">
-                <input type="text" name="email" placeholder="Email" />
-              </div>
-              <div className="col-12">
-                <textarea name="message" placeholder="Message" />
-              </div>
-              <div className="col-12">
-                <input type="submit" value="Send Message" />
-              </div>
-            </div>
-          </form>
-        </div>
-      </section> */}
     </div>
 
     <PageFooter />

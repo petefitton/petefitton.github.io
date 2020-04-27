@@ -1,3 +1,3 @@
 # Deployed Website Link:
 
-https://petefitton.github.io/pfPortfolio/
+https://petefitton.github.io/
